@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  api:
+    container_name: api
+    image: api_image
+    command: bash -c "rails server"
+    build: ./api/
+    ports:
+      - '3000:3000'
